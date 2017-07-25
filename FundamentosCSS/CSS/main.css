@@ -1,0 +1,20 @@
+h1
+{
+  background-color: #5b7989;
+  text-align: left;
+  text-shadow: 2px;
+  text-decoration-color: #02010a;
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px;
+}
+aside
+{
+  text-align: right;
+  background-color: #f055;
+}
+
+#foto
+{
+    background-color: #82c3a6;
+    text-align: center;
+}
