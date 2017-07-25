@@ -7,14 +7,20 @@ h1
   border-radius: 10px 10px 0px 0px;
   padding: 10px;
 }
-aside
+h1 a
 {
   text-align: right;
-  background-color: #f055;
+  font-size: .5em;
 }
 
 #foto
 {
-    background-color: #82c3a6;
-    text-align: center;
+  background-color: #82c3a6;
+  text-align: center;
+}
+#foto2
+{
+  text-align: center;
+  background-color: #d5c75f;
+  border: 1px;
 }
