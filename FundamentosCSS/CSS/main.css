@@ -1,26 +1,181 @@
-h1
+body
+{
+  font-family: 'Dancing Script', cursive;
+  background-color: #02010a;
+}
+body h1
 {
   background-color: #5b7989;
   text-align: left;
-  text-shadow: 2px;
-  text-decoration-color: #02010a;
   border-radius: 10px 10px 0px 0px;
-  padding: 10px;
+  text-shadow: 2px 2px  #02010a;
+  color: white;
+  padding:10px;
+  animation-name: slidein;
+  animation-duration: 2s;
 }
-h1 a
+body h1 a
 {
   text-align: right;
-  font-size: .5em;
+  font-size: .5em;  
 }
-
+.menu a{
+  text-shadow: 2px 2px  #02010a;
+  color: white;
+}
 #foto
 {
   background-color: #82c3a6;
   text-align: center;
 }
+#foto img
+{
+  box-shadow: 2px 2px #02010a;
+}
 #foto2
 {
   text-align: center;
   background-color: #d5c75f;
-  border: 1px;
+  display: -webkit-flex; /* Safari */
+  display: -moz-flex; /* Mozilla */
+  display: -ms-flex; /* IE 9 */
+  display: flex;
+}
+#foto2 img
+{
+  box-shadow: 2px 2px #02010a;
+  padding: 10px;
+}
+
+.foto2class1:hover
+{
+  -ms-transform: rotate(10deg); /* IE 9 */
+  -moz-transform: rotate(10deg); /* Mozilla */
+  -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+  transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3a6;
+  border:2px;
+}
+.foto2class2:hover
+{
+  -ms-transform: translate(20px,-5px); /* IE 9 */
+  -webkit-transform: translate(20px,-5px); /* Chrome, Safari, Opera */
+  transform: translate(20px,-5px);
+  box-shadow: 2px 2px #82c3a6;
+  border:2px;
+}
+#piedepagina
+{
+  border-radius: 0px 0px 10px 10px;
+  background-color: #C6d5c5;
+  height: auto;
+  padding: 10px;
+  display: -webkit-flex; /* Safari */
+  display: -moz-flex; /* Mozilla */
+  display: -ms-flex; /* IE 9 */
+  display: flex;
+}
+/* Sentencias para Mobile*/
+@media only screen and (max-width: 500px) {
+    #piedepagina{
+      -webkit-flex-flow: column wrap;
+      -moz-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+    }
+    .menu
+    {
+      float:center;
+    }
+    #foto
+    {
+      width: 100%;
+      height: auto;
+    }
+    #foto img
+    {
+      width: 100%;
+      height: auto;
+    }
+    #foto2
+    {
+      -webkit-flex-flow: row wrap;
+      -moz-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+    }
+    #foto2 img:nth-child(1)
+      {
+        -webkit-flex-basis: 100%;
+        -moz-flex-basis: 100%;
+        -ms-flex-basis: 100%;
+        flex-basis: 100%;
+      }
+    #foto2 img:nth-child(2)
+      {
+        -webkit-flex-basis: 99%;
+        -moz-flex-basis: 99%;
+        -ms-flex-basis: 99%;
+        flex-basis: 99%;
+      }
+    #contenido{
+      width: 100%;
+    }
+    body h1
+    {
+      text-align: center;
+    }
+}
+/* Sentencias para Desktop*/
+@media only screen and (min-width: 501px){
+  #piedepagina
+  {
+    column-count: 4;
+  }
+  .menu
+  {
+    float:right;
+  }
+  #foto
+  {
+    width: 900px;
+  }
+  #foto img
+  {
+    width: 500px;
+    height: 500px;
+  }
+  #foto2
+  {
+    width: 900px;
+  }
+  #foto2 img:nth-child(1)
+  {
+    -webkit-flex-basis: 50%;
+    -moz-flex-basis: 50%;
+    -ms-flex-basis: 50%;
+    flex-basis: 50%;
+  }
+  #foto2 img:nth-child(2)
+  {
+    -webkit-flex-basis:50%;
+    -moz-flex-basis: 50%;
+    -ms-flex-basis: 50%;
+    flex-basis: 50%;
+  }
+  #contenido{
+    width: 900px;
+  }
+}
+@keyframes slidein {
+  0% {
+    margin-top: 150%;
+  }
+
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%;
+  }
 }
